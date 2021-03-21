@@ -1,12 +1,15 @@
 package br.com.alura.forum.modelo;
 
 import java.time.LocalDateTime;
+import java.util.Collection;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+
+import br.com.alura.forum.controller.dto.RespostaDto;
 
 @Entity
 public class Resposta {
@@ -93,5 +96,12 @@ public class Resposta {
 	public void setSolucao(Boolean solucao) {
 		this.solucao = solucao;
 	}
+
+	public Collection<RespostaDto> getRespostas() {
+		
+		return null;
+	}
+
+	
 
 }
